@@ -9,6 +9,8 @@
     min-height: 100vh;
     background: url(./assets/Chosen\ Main\ page.png) no-repeat;
     background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 .header{
     position: fixed;
@@ -29,7 +31,6 @@
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, .1);
-    backdrop-filter: blur(50px);
     z-index: -1;
 }
 .logo{
@@ -81,15 +82,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 2rem;
+    padding: 7rem 2rem;
+    background: linear-gradient(to top, #040308, #ad4a28, #dd723c, #fc7001, #dcb697, #9ba5ae, #3e5879, #020b1a);
 }
 .character__box{
-    border: 1px solid black;
+    background: #fff;
     width: 75%;
     padding: 1rem;
     border-radius: 20px;
     margin-top: 3rem;
-    box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
@@ -104,16 +106,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .character__image{
-    width: 75%;
-    height: 80%;
+    width: 110px;
+    height: 100px;
     margin-bottom: .3rem;
 }
 .character__image img{
     height: 100%;
     width: 100%;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: 100% 10%;
 }
 .character__details{
     width: 100%;
@@ -121,6 +126,78 @@
     align-items: center;
     line-height: 1.5;
 }
+
+
+
+
+
+
+
+
+
+
+
+.promotional__home-container{
+    background: url(./assets/Matthew22:14.png) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.homeText {
+    font-size: 6vw;
+    font-weight: 700;
+    text-shadow: 0 15px 25px rgba(0, 0, 0, 2);
+    color: whitesmoke;
+    bottom: -160px;
+    position: relative;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+.homeSubtext {
+    position: relative;
+    color: whitesmoke;
+    text-shadow: 0 15px 25px rgba(0, 0, 0, 2);
+    bottom: -170px;
+    font-size: 25px;
+    line-height: 1.9;
+    font-weight: 600;
+}
+.promotional__container{
+    padding: 3rem 1.5rem;
+    width: 100%;
+}
+.promotional__breakdown{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.breakdown__title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.promotional__detail-breakdown{
+    display: flex;
+    gap: 10px;
+}
+.promotional__img-container{
+    width: 50%;
+    height: 260px;
+}
+.promotional__img-container img{
+    width: 100%;
+    height: 100%;
+}
+.promotional__text-container{
+    width: 50%;
+    line-height: 1.5;
+}
+
+
+
 
 
 /*                  Tablets              */
@@ -152,6 +229,8 @@
         background: rgba(0, 0, 0, .1);
         backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transition: .3s ease;
+        overflow: hidden;
     }
     #check:checked~.navbar {
         height: 17.7rem;
