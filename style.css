@@ -164,13 +164,13 @@
     font-weight: 600;
 }
 .promotional__container{
-    padding: 3rem 1.5rem;
     width: 100%;
 }
 .promotional__breakdown{
     min-height: 60vh;
     display: flex;
     flex-direction: column;
+    padding: 5rem 3rem;
     
 }
 .breakdown__title{
@@ -178,13 +178,14 @@
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    font-size: 28px;
 }
 .promotional__detail-breakdown{
     display: flex;
-    gap: 10px;
+    gap: 3rem;
 }
 .promotional__img-container{
-    width: 50%;
+    width: 40%;
     height: 260px;
 }
 .promotional__img-container img{
@@ -195,7 +196,88 @@
     width: 50%;
     line-height: 1.5;
 }
-
+.progress__container{
+    background: linear-gradient(to top, #040308, #ad4a28, #dd723c, #fc7001, #dcb697, #9ba5ae, #3e5879, #020b1a);
+    width: 100%;
+    height: 100%;
+}
+.fundraiser__container{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 3rem;
+}
+.fundraiser__title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+.fundraiser__detail-container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+}
+.fundraiser__detail-container .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.fundraiser__detail-container .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.fundraiser__detail-container .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px 5px);
+    stroke-dasharray: 420;
+    stroke-dashoffset: 420;
+    stroke-linecap: round;
+}
+.fundraiser__detail-container .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.fundraiser__detail-container .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 87) / 100);
+    stroke: #03a9f4;
+}
+.fundraiser__detail-container .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.fundraiser__detail-container .percent .number h2{
+    font-size: 48px;
+}
+.fundraiser__detail-container .percent .number h2{
+    font-size: 24px;
+}
+.fundraiser__detail-container .progress__text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 
 
 
