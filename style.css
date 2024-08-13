@@ -6,11 +6,16 @@
 
 
 .home__container{
-    min-height: 100vh;
-    background: url(./assets/Chosen\ Main\ page.png) no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.background__image{
+    object-fit: fill;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .header{
     position: fixed;
@@ -325,5 +330,43 @@
         font-size: 1.1rem;
         margin: 1.5rem 0;
         text-align: center;
+    }
+}
+
+@media (max-width: 425px){
+    .home__container{
+        position: relative;
+    }
+    .video__container{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .character__box{
+        width: 85%;
+    }
+    .character__details-divided{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .character__image-container{
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+    .promotional__breakdown{
+        padding: 5rem 1rem;
+    }
+    .breakdown__title{
+        font-size: 22px;
+    }
+    .promotional__detail-breakdown{
+        flex-direction: column;
+        align-items: center;
+    }
+    .promotional__img-container{
+        width: 90%;
+    }
+    .promotional__text-container{
+        width: 95%;
     }
 }
