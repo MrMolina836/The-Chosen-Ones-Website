@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Kenny Johnson</title>
+</head>
+<body>
+    <section class="character__home-container">
+      <header class="header">
+        <a href="" class="logo">The Chosen One's</a>
+
+        <input type="checkbox" id="check" />
+        <label for="check" class="icons">
+          <i class="bx bx-menu" id="menu__icon"></i>
+          <i class="bx bx-x" id="close__icon"></i>
+        </label>
+
+        <nav class="navbar">
+          <a href="../index.html">Home</a>
+          <a href="./Character.html">Character</a>
+          <a href="./Promotional.html">Promotional</a>
+        </nav>
+      </header>
+    </section>
+    <div class="full__img" id="fullImgBox">
+        <img src="../asset/Church Picnic.JPEG" id="fullImg" alt="">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="gallery__container">
+        <img src="../assets/Kenny Johnson.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Kenny's Power.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/Pastor with Mike.jpeg" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/Pastor's.jpeg" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/Pastora Surpise.jpeg" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/Quile's.jpeg" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/Cholo, Tim, Steven.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/Katia & Kez.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/Pastor Rosario w: Family.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/Matthew & Donna.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/Jo & Pastora.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/" onclick="openFullImg(this.src)" alt="">
+        <img src="../asset/" onclick="openFullImg(this.src)" alt="">
+    </div>
+    
+
+    <script>
+
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
