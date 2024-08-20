@@ -290,6 +290,14 @@
     letter-spacing: 1px;
 }
 
+.kennys__page{
+    background: linear-gradient(to top, #040308, #9ba5ae,#87CEFA, #3e5879, #020b1a);
+}
+.character__video-container{
+    height: 90vh;
+    width: 100%;
+    padding: 15vh 5rem 0 5rem;
+}
 
 .gallery__container {
     width: 80%;
@@ -299,9 +307,7 @@
     grid-gap: 30px;
     
 }
-.kennys__page{
-    background: linear-gradient(to top, #040308, #9ba5ae,#87CEFA, #3e5879, #020b1a);
-}
+
 
 .gallery__container img {
     width: 100%;
